@@ -102,7 +102,7 @@ function doModelValidation(name) {
  * @param {object: Revision} data 
  */
 async function createRevision(data) {
-  const revisionModel = strapi.plugins.revision.models.revision;
+  const revisionModel = strapi.plugins.revisions.models.revision;
   return revisionModel.forge(data).save();
 }
 
